@@ -3,7 +3,7 @@
 void Karen::complain(const std::string& level) {
 	std::string levels[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 	for (int i = 0; i < 4; ++i)
-		if(levels[i] == level)
+		while(levels[i] == level)
 			(this->*ptr[i])();
 }
 
